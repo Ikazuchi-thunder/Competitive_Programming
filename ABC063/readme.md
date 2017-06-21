@@ -15,10 +15,10 @@
 3. 合計が10の倍数な上に入力も全部10の倍数なので0を出力
 
 ## D
-素直にやると<img src="https://latex.codecogs.com/gif.latex?\mathcal{O}(N * max(h))" /> かかるため，間に合わない．  
+素直にやると<img src="https://latex.codecogs.com/gif.latex?\mathcal{O}(N*max(h))" /> かかるため，間に合わない．  
 
 t回で魔物を全滅させることが可能かどうかを考える．  
 t回攻撃するということは，全体にtBダメージを与えたうえに，さらに(A - B)ダメージをt回対象を選んで与えるということである．  
-つまり，<img src="https://latex.codecogs.com/gif.latex?\sum_{i}ceil(\frac{h_{i} - tB}{A - B}) < t" /> を満たせば，t回で魔物が全滅する．  
+つまり，<img src="https://latex.codecogs.com/gif.latex?\sum_{i}ceil(\frac{h_{i}-tB}{A-B})<t" /> を満たせば，t回で魔物が全滅する．  
 
 あとは，この判定式を用いて二分探索を行えばよい．
