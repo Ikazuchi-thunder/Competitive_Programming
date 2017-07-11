@@ -14,7 +14,7 @@
 `i`のうち，左側のものよりも左にある数字の集合を`A`，右側のものよりも右にある数字の集合を`B`とする．  
 このとき，（長さ3の部分列について考えるとき）`A, A, i`，`A, i, B`，`i, B, B`という数字のとり方をした場合，部分列の重複が発生する．  
 たとえば，`2 1 1 3`に対して`2 1`，`1 3`，`2 1 3`やが重複している．  
-したがって長さ`k`の部分列に対して<img src="https://latex.codecogs.com/gif.latex?_{n+1}C_{k}-_{right+left}C_{k-1}" />を求めれば良い．
+したがって長さ`k`の部分列に対して<img src="https://latex.codecogs.com/gif.latex?_{n+1}C_{k}-_{|A|+|B|}C_{k-1}" />を求めれば良い．
 
 ところで，この問題では組み合わせ関数の計算も問題になる．  
 <img src="https://latex.codecogs.com/gif.latex?_nC_r=\frac{n!}{r!(n-r)!}" />として計算するが，<img src="https://latex.codecogs.com/gif.latex?n\le10^{5}" />という制約のもとでは階乗の数字が非常に大きくなるため<img src="https://latex.codecogs.com/gif.latex?10^9+7" />の剰余類で考えることが必要である．  
