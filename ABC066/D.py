@@ -43,6 +43,6 @@ for i in range(1, n + 2):
     if i == 1:
         print(n)
     elif left + right >= i - 1:
-        print((nCm(n + 1, i) - nCm(left + right, i - 1) % MOD))
+        print((nCm(n + 1, i) - nCm(left + right, i - 1)) % MOD)
     else:
         print(nCm(n + 1, i))
